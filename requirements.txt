@@ -1,0 +1,9 @@
+pymongo
+certifi
+requests
+pyyaml
+jira
+pydantic
+langchain-openai
+openai
+configparser

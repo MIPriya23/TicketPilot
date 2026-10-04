@@ -1,0 +1,22 @@
+{
+    "summary": "",
+    "description": "",
+    "priority": "",
+    "project": {"key": "RDKTV"},
+    "issuetype": {"name": "Bug"},
+    "assignee": {"name": "mganes157"},
+    "reporter": {"name": "mashok849"},
+    "Blocker": {"id": "86678"},
+    "Regression": {"id": "86655"},
+    "Branch": [{"id": "86662"}],
+    "Feature": {"id": "101502"},
+    "Frequency": {"id": "86676"},
+    "Impacted Products": [{"id": "87737"}],
+    "Telemarker": "",
+    "Defect Recovery Steps": "",
+    "Feature Area": {"id": "97522"},
+    "Device Type": [{"id": "119971"}],
+    "Type of Issue": {"id": "101483"},
+    "Opened in Build": "",
+    "Defect Date / Time": ""
+}

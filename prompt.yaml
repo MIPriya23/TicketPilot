@@ -1,0 +1,126 @@
+jira_creation_prompt: |
+  You are an intelligent triage assistant for ServiceNow incidents. 
+  Analyze the following incident description and generate a detailed JSON response with these fields:
+
+  1. summary: One strong sentence crisp and clearly stating the issue.  
+  2. description: A multi-line formatted block with bold section headers in this order:
+     **Issue_details:** <3 lines about issue>  
+     **Build_details:** <extract .bin file from pre_activity_validation>  
+     **Steps_to_reproduce:**  
+     Step 1: ...  
+     Step 2: ...  
+     Step 3: ...  
+     **Expected:** <expected behavior>  
+     **Actual:** <actual behavior>  
+     **Recovery_steps:**  
+     <line1>  
+     <line2>  
+     **Logs:** <extract log from pre_activity_validation>  
+     **Video:** <extract video from pre_activity_validation>
+     **Telemetry Markers:** <extract telemetry from pre_activity_validation>
+     **Impacted_partners:** [<partner1>, <partner2>]  
+
+  3. suggested_fix: Provide a short 3-line actionable fix. End with:  
+     "please find the suggested fix provided in comments section".
+
+  4. priority: Provide a priority level (P0, P1, P2) based on the severity of the incident,
+      P0 - critical , P1 - High, P2 - Medium just return P0, P1, or P2.
+
+  Respond only in strict JSON format like this:
+  {{
+      "summary": "<one_strong_sentence>",
+      "description": "<formatted_block_with_bold_headers>",
+      "suggested_fix": "<3_lines + closing_note>",
+      "priority": "<P0, P1, or P2>"
+  }}
+
+  Incident Description:
+  """{incident_description}"""
+
+  Pre-Activity Validation:
+  """{pre_activity_validation}"""
+
+  Impacted Partners:
+  """{impacted_partners}"""
+
+similar_tickets_prompt: |
+  You are an assistant that finds similar Jira tickets based on their descriptions.
+
+  Current Jira ticket description:
+  """{current_description}"""
+
+  Existing Jira tickets with their keys and descriptions:
+  {existing_tickets}
+
+  Your task:
+  1. Compare the current description with each existing ticket description.  
+  2. Identify which tickets are semantically similar (meaning they describe the same or closely related issues).  
+  3. Respond strictly in JSON format like this:
+
+  {
+    "similar_tickets": [
+      {
+        "key": "TICKET-123",
+        "reason": "Both mention playback freezing during channel change."
+      },
+      {
+        "key": "TICKET-456",
+        "reason": "Issue about authentication timeout, similar error code E101."
+      }
+    ]
+  }
+
+  If no similar tickets are found, return:
+  {
+    "similar_tickets": []
+  } 
+
+mail_creation_prompt: |
+  You are a triage summarizer. Summarize the following JIRA issue into JSON.
+
+  Incident ID: {incident_id}
+  "jira_issue": "{project_id}"
+
+  Status: {status}
+  Resolution: {resolution}
+
+  Comments:
+  """{comments_text}"""
+
+  Respond strictly in JSON like:
+  {{
+    "incident_id": "{incident_id}",
+    "summary": {{
+        "incident_details": "<line summarizing the incident>",
+        "tracking_ticket": "{project_id}",
+        "root_cause": "<line explaining root cause>",
+        "fix_provided": "<line describing the fix applied>",
+        "turnaround_time": {turnaround_time},
+        "deployment_details": "<commit details / prod deployment info from comments>"
+    }}
+  }}
+
+mail_summary_template: |
+  Hello,
+
+  Incident ID: {incident_id}
+
+  Tracking Ticket: {tracking_ticket}
+
+  Summary of Issue:
+  {incident_details}
+
+  Root Cause:
+  {root_cause}
+
+  Fix Applied:
+  {fix_provided}
+
+  Turnaround Time:
+  {turnaround_time}
+
+  Deployment Details:
+  {deployment_details}
+
+  Regards,
+  TicketPilot - Incident Automation

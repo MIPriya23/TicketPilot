@@ -1,0 +1,434 @@
+[
+    {
+        "_id": "68cbe653e589827d8a4e43cc",
+        "_cls": "ChangeRequest.AutomationChange",
+        "number": "CHG007468767",
+        "change_details": {
+            "created_on": "2025-09-18 07:10:00 AM",
+            "division": "",
+            "region": "",
+            "category": "residential_services",
+            "subcategory": null,
+            "risk": "Low",
+            "change_template": "",
+            "state": "New",
+            "service_affect": "Non Outage",
+            "primary_market": {
+                "display_value": "National",
+                "link": "https://comcaststage.service-now.com/api/now/table/u_comcast_market/67748fd76f7c8300a83b2d232e3ee48d"
+            },
+            "symptom_code": "",
+            "multi_day_change": "false",
+            "external_system_name": "Partner Gateway",
+            "external_ticket_unique_id": "",
+            "external_source_url": "",
+            "impacted_partners": "comcast",
+            "tts_procedure_id": "WP000007586",
+            "tts_ticket_id": "",
+            "priority": "4 - Low",
+            "impact": "3 - Low",
+            "on_site_resource": null,
+            "on_site_contact": "",
+            "on_site_headend": "",
+            "adult_contact_impact": "0",
+            "cab_required": "false",
+            "reschedule_reason": null,
+            "customer_impact_status": "Not Run",
+            "customer_impact_last_run": "",
+            "description": "Intermittent Wi-Fi connectivity issues observed on SCXI12BEJ device. Users report frequent disconnections and low signal strength. Further investigation required to identify root cause and implement solution.",
+            "short_description": "[Field Issue][Wi-Fi Connectivity] Customer reports intermittent Wi-Fi drops on SCXI12BEJ device",
+            "justification": "Test",
+            "test_plan": "script test plan",
+            "pre_activity_validation": "image: SCXI12BEJ_035.010.00.8.1p2s3_PROD_sdy_XOE-signed.bin, log: 30_wifi.txt, telemetry: ent_520",
+            "implementation_plan": "script imp plan",
+            "backout_plan": "script back plan",
+            "assignment_group": {
+                "display_value": "TPX-RDK-CPE-RM:NTL",
+                "link": "https://comcaststage.service-now.com/api/now/table/sys_user_group/fa3fc718dbd4af009e6e01a3ca961951"
+            },
+            "assigned_to": {
+                "display_value": "",
+                "link": ""
+            },
+            "additional_assignee_list": "",
+            "peer_reviewer_group": "",
+            "ccb": "",
+            "technical_reviewer_group": "",
+            "change_validator": "",
+            "conflict": {
+                "conflict_status": "No Conflict",
+                "conflict_last_run": "2025-09-18 07:10:05 AM"
+            },
+            "cmdb_ci": {
+                "display_value": "ENTOS - SCXI12BEJ",
+                "sys_class_name": "cmdb_ci"
+            },
+            "schedule": {
+                "start_date": "2025-09-18 07:15:00 AM",
+                "end_date": "2025-09-18 12:00:00 PM",
+                "work_start": "",
+                "work_end": "",
+                "cloud_bridge_url": "https://conferencebridge.comcast.com/join/CHG007468767",
+                "technical_bridge": "224-225-1903; 007468767"
+            },
+            "closure": {
+                "closed_at": "",
+                "close_code": null,
+                "close_code_details": null,
+                "close_notes": ""
+            },
+            "additional_comments": "",
+            "work_notes": "",
+            "approval": "",
+            "opened_at": "2025-09-18 07:10:00 AM",
+            "community": "",
+            "change_type": "Pre-approved"
+        },
+        "rda_meta": {
+            "added_on": "2025-09-18 11:10:33 AM",
+            "last_update": "2025-09-18 12:10:41 PM",
+            "state": "0",
+            "partial_pass": false,
+            "props": [],
+            "logs": [],
+            "iop_env": "stage",
+            "region": "NA"
+        },
+        "sys_id": "21f429351b007a506ecb86a5624bcb4c",
+        "record_url": "https://comcaststage.service-now.com/nav_to.do?uri=change_request.do?sys_id=21f429351b007a506ecb86a5624bcb4c",
+        "community_tx": "",
+        "affected_elements": [
+            {
+                "configuration_item": "ENTOS - SCXI12BEJ",
+                "service_condition": "",
+                "actual_start": "",
+                "actual_end": "",
+                "actual_duration": ""
+            }
+        ]
+    },
+    {
+        "_id": "68cbe653e589827d8a4e43cd",
+        "_cls": "ChangeRequest.AutomationChange",
+        "number": "CHG007468768",
+        "change_details": {
+            "created_on": "2025-09-18 07:20:00 AM",
+            "division": "",
+            "region": "",
+            "category": "residential_services",
+            "subcategory": null,
+            "risk": "Low",
+            "change_template": "",
+            "state": "New",
+            "service_affect": "Non Outage",
+            "primary_market": {
+                "display_value": "National",
+                "link": "https://comcaststage.service-now.com/api/now/table/u_comcast_market/67748fd76f7c8300a83b2d232e3ee48d"
+            },
+            "symptom_code": "",
+            "multi_day_change": "false",
+            "external_system_name": "Partner Gateway",
+            "external_ticket_unique_id": "",
+            "external_source_url": "",
+            "impacted_partners": "comcast",
+            "tts_procedure_id": "WP000007587",
+            "tts_ticket_id": "",
+            "priority": "4 - Low",
+            "impact": "3 - Low",
+            "on_site_resource": null,
+            "on_site_contact": "",
+            "on_site_headend": "",
+            "adult_contact_impact": "0",
+            "cab_required": "false",
+            "reschedule_reason": null,
+            "customer_impact_status": "Not Run",
+            "customer_impact_last_run": "",
+            "description": "Audio distortion issue on SCXI13BEK device during live streaming. Users report crackling and volume fluctuations across multiple channels. Investigation needed to isolate source and resolve.",
+            "short_description": "[Field Issue][Audio Distortion] Customer reports audio crackling on SCXI13BEK device",
+            "justification": "Test",
+            "test_plan": "script test plan",
+            "pre_activity_validation": "image: SCXI13BEK_036.011.00.7.5p4s2_PROD_sdy_XOE-signed.bin, log: 32_audio.txt, telemetry: ent_530",
+            "implementation_plan": "script imp plan",
+            "backout_plan": "script back plan",
+            "assignment_group": {
+                "display_value": "TPX-RDK-CPE-RM:NTL",
+                "link": "https://comcaststage.service-now.com/api/now/table/sys_user_group/fa3fc718dbd4af009e6e01a3ca961951"
+            },
+            "assigned_to": {
+                "display_value": "",
+                "link": ""
+            },
+            "additional_assignee_list": "",
+            "peer_reviewer_group": "",
+            "ccb": "",
+            "technical_reviewer_group": "",
+            "change_validator": "",
+            "conflict": {
+                "conflict_status": "No Conflict",
+                "conflict_last_run": "2025-09-18 07:20:05 AM"
+            },
+            "cmdb_ci": {
+                "display_value": "ENTOS - SCXI13BEK",
+                "sys_class_name": "cmdb_ci"
+            },
+            "schedule": {
+                "start_date": "2025-09-18 07:25:00 AM",
+                "end_date": "2025-09-18 12:05:00 PM",
+                "work_start": "",
+                "work_end": "",
+                "cloud_bridge_url": "https://conferencebridge.comcast.com/join/CHG007468768",
+                "technical_bridge": "224-225-1904; 007468768"
+            },
+            "closure": {
+                "closed_at": "",
+                "close_code": null,
+                "close_code_details": null,
+                "close_notes": ""
+            },
+            "additional_comments": "",
+            "work_notes": "",
+            "approval": "",
+            "opened_at": "2025-09-18 07:20:00 AM",
+            "community": "",
+            "change_type": "Pre-approved"
+        },
+        "rda_meta": {
+            "added_on": "2025-09-18 11:15:33 AM",
+            "last_update": "2025-09-18 12:15:41 PM",
+            "state": "0",
+            "partial_pass": false,
+            "props": [],
+            "logs": [],
+            "iop_env": "stage",
+            "region": "NA"
+        },
+        "sys_id": "21f429351b007a506ecb86a5624bcb5d",
+        "record_url": "https://comcaststage.service-now.com/nav_to.do?uri=change_request.do?sys_id=21f429351b007a506ecb86a5624bcb5d",
+        "community_tx": "",
+        "affected_elements": [
+            {
+                "configuration_item": "ENTOS - SCXI13BEK",
+                "service_condition": "",
+                "actual_start": "",
+                "actual_end": "",
+                "actual_duration": ""
+            }
+        ]
+    },
+    {
+        "_id": "68cbe653e589827d8a4e43ce",
+        "_cls": "ChangeRequest.AutomationChange",
+        "number": "CHG007468769",
+        "change_details": {
+            "created_on": "2025-09-18 07:30:00 AM",
+            "division": "",
+            "region": "",
+            "category": "residential_services",
+            "subcategory": null,
+            "risk": "Low",
+            "change_template": "",
+            "state": "New",
+            "service_affect": "Non Outage",
+            "primary_market": {
+                "display_value": "National",
+                "link": "https://comcaststage.service-now.com/api/now/table/u_comcast_market/67748fd76f7c8300a83b2d232e3ee48d"
+            },
+            "symptom_code": "",
+            "multi_day_change": "false",
+            "external_system_name": "Partner Gateway",
+            "external_ticket_unique_id": "",
+            "external_source_url": "",
+            "impacted_partners": "comcast",
+            "tts_procedure_id": "WP000007588",
+            "tts_ticket_id": "",
+            "priority": "4 - Low",
+            "impact": "3 - Low",
+            "on_site_resource": null,
+            "on_site_contact": "",
+            "on_site_headend": "",
+            "adult_contact_impact": "0",
+            "cab_required": "false",
+            "reschedule_reason": null,
+            "customer_impact_status": "Not Run",
+            "customer_impact_last_run": "",
+            "description": "Slow channel zapping observed on SCXI14BEL device. Customers report delayed response when changing channels, affecting user experience. Requires troubleshooting and performance optimization.",
+            "short_description": "[Field Issue][Channel Zapping] Customer reports delayed channel switching on SCXI14BEL device",
+            "justification": "Test",
+            "test_plan": "script test plan",
+            "pre_activity_validation": "image: SCXI14BEL_037.012.00.6.9p7s1_PROD_sdy_XOE-signed.bin, log: 28_channel.txt, telemetry: ent_540",
+            "implementation_plan": "script imp plan",
+            "backout_plan": "script back plan",
+            "assignment_group": {
+                "display_value": "TPX-RDK-CPE-RM:NTL",
+                "link": "https://comcaststage.service-now.com/api/now/table/sys_user_group/fa3fc718dbd4af009e6e01a3ca961951"
+            },
+            "assigned_to": {
+                "display_value": "",
+                "link": ""
+            },
+            "additional_assignee_list": "",
+            "peer_reviewer_group": "",
+            "ccb": "",
+            "technical_reviewer_group": "",
+            "change_validator": "",
+            "conflict": {
+                "conflict_status": "No Conflict",
+                "conflict_last_run": "2025-09-18 07:30:05 AM"
+            },
+            "cmdb_ci": {
+                "display_value": "ENTOS - SCXI14BEL",
+                "sys_class_name": "cmdb_ci"
+            },
+            "schedule": {
+                "start_date": "2025-09-18 07:35:00 AM",
+                "end_date": "2025-09-18 12:10:00 PM",
+                "work_start": "",
+                "work_end": "",
+                "cloud_bridge_url": "https://conferencebridge.comcast.com/join/CHG007468769",
+                "technical_bridge": "224-225-1905; 007468769"
+            },
+            "closure": {
+                "closed_at": "",
+                "close_code": null,
+                "close_code_details": null,
+                "close_notes": ""
+            },
+            "additional_comments": "",
+            "work_notes": "",
+            "approval": "",
+            "opened_at": "2025-09-18 07:30:00 AM",
+            "community": "",
+            "change_type": "Pre-approved"
+        },
+        "rda_meta": {
+            "added_on": "2025-09-18 11:20:33 AM",
+            "last_update": "2025-09-18 12:20:41 PM",
+            "state": "0",
+            "partial_pass": false,
+            "props": [],
+            "logs": [],
+            "iop_env": "stage",
+            "region": "NA"
+        },
+        "sys_id": "21f429351b007a506ecb86a5624bcb6e",
+        "record_url": "https://comcaststage.service-now.com/nav_to.do?uri=change_request.do?sys_id=21f429351b007a506ecb86a5624bcb6e",
+        "community_tx": "",
+        "affected_elements": [
+            {
+                "configuration_item": "ENTOS - SCXI14BEL",
+                "service_condition": "",
+                "actual_start": "",
+                "actual_end": "",
+                "actual_duration": ""
+            }
+        ]
+    },
+    {
+        "_id": "68cbe653e589827d8a4e43cf",
+        "_cls": "ChangeRequest.AutomationChange",
+        "number": "CHG007468770",
+        "change_details": {
+            "created_on": "2025-09-18 07:40:00 AM",
+            "division": "",
+            "region": "",
+            "category": "residential_services",
+            "subcategory": null,
+            "risk": "Low",
+            "change_template": "",
+            "state": "New",
+            "service_affect": "Non Outage",
+            "primary_market": {
+                "display_value": "National",
+                "link": "https://comcaststage.service-now.com/api/now/table/u_comcast_market/67748fd76f7c8300a83b2d232e3ee48d"
+            },
+            "symptom_code": "",
+            "multi_day_change": "false",
+            "external_system_name": "Partner Gateway",
+            "external_ticket_unique_id": "",
+            "external_source_url": "",
+            "impacted_partners": "comcast",
+            "tts_procedure_id": "WP000007589",
+            "tts_ticket_id": "",
+            "priority": "4 - Low",
+            "impact": "3 - Low",
+            "on_site_resource": null,
+            "on_site_contact": "",
+            "on_site_headend": "",
+            "adult_contact_impact": "0",
+            "cab_required": "false",
+            "reschedule_reason": null,
+            "customer_impact_status": "Not Run",
+            "customer_impact_last_run": "",
+            "description": "On-demand video playback fails intermittently on SCXI15BEM device. Symptoms include buffering loops and playback errors. Investigation required to identify root cause and fix.",
+            "short_description": "[Field Issue][On-demand Playback] Customer reports buffering issues on SCXI15BEM device",
+            "justification": "Test",
+            "test_plan": "script test plan",
+            "pre_activity_validation": "image: SCXI15BEM_038.013.00.9.2p6s3_PROD_sdy_XOE-signed.bin, log: 29_on_demand.txt, telemetry: ent_550",
+            "implementation_plan": "script imp plan",
+            "backout_plan": "script back plan",
+            "assignment_group": {
+                "display_value": "TPX-RDK-CPE-RM:NTL",
+                "link": "https://comcaststage.service-now.com/api/now/table/sys_user_group/fa3fc718dbd4af009e6e01a3ca961951"
+            },
+            "assigned_to": {
+                "display_value": "",
+                "link": ""
+            },
+            "additional_assignee_list": "",
+            "peer_reviewer_group": "",
+            "ccb": "",
+            "technical_reviewer_group": "",
+            "change_validator": "",
+            "conflict": {
+                "conflict_status": "No Conflict",
+                "conflict_last_run": "2025-09-18 07:40:05 AM"
+            },
+            "cmdb_ci": {
+                "display_value": "ENTOS - SCXI15BEM",
+                "sys_class_name": "cmdb_ci"
+            },
+            "schedule": {
+                "start_date": "2025-09-18 07:45:00 AM",
+                "end_date": "2025-09-18 12:15:00 PM",
+                "work_start": "",
+                "work_end": "",
+                "cloud_bridge_url": "https://conferencebridge.comcast.com/join/CHG007468770",
+                "technical_bridge": "224-225-1906; 007468770"
+            },
+            "closure": {
+                "closed_at": "",
+                "close_code": null,
+                "close_code_details": null,
+                "close_notes": ""
+            },
+            "additional_comments": "",
+            "work_notes": "",
+            "approval": "",
+            "opened_at": "2025-09-18 07:40:00 AM",
+            "community": "",
+            "change_type": "Pre-approved"
+        },
+        "rda_meta": {
+            "added_on": "2025-09-18 11:25:33 AM",
+            "last_update": "2025-09-18 12:25:41 PM",
+            "state": "0",
+            "partial_pass": false,
+            "props": [],
+            "logs": [],
+            "iop_env": "stage",
+            "region": "NA"
+        },
+        "sys_id": "21f429351b007a506ecb86a5624bcb7f",
+        "record_url": "https://comcaststage.service-now.com/nav_to.do?uri=change_request.do?sys_id=21f429351b007a506ecb86a5624bcb7f",
+        "community_tx": "",
+        "affected_elements": [
+            {
+                "configuration_item": "ENTOS - SCXI15BEM",
+                "service_condition": "",
+                "actual_start": "",
+                "actual_end": "",
+                "actual_duration": ""
+            }
+        ]
+    }
+]
